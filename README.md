@@ -5,15 +5,15 @@ This project enhances sentiment analysis on noisy social media text by combining
 Many people use social media platforms like YouTube to share opinions through comments. These comments often include slang, spelling mistakes, and emojis, which makes it difficult for normal sentiment analysis models to understand the true meaning. 
 This project aims to solve that problem by improving how we detect emotions and opinions in noisy and informal text using both words and emojis together.
 # Review Of Literature
-##VADER: A Rule-based Model for Sentiment Analysis of Social Media Text<br>
+## VADER: A Rule-based Model for Sentiment Analysis of Social Media Text<br>
 -> Hutto, C. & Gilbert, E. (2014)<br>
 -> - Easy to use and interpretable - Performs well on social media text with emojis, slang, and punctuation.<br>
 -> Limited in capturing context and sarcasm.<br>
-##Sentiment of Emojis<br>
+## Sentiment of Emojis<br>
 ->Novak, P. K. (2015)<br>
 ->- Adds sentiment signals from emojis. - Enhances emotion detection in informal communication.<br>
 -> Limited emoji lexicon and cultural interpretation issues.<br>
-##Enriching Word Vectors with Subword Information<br>
+## Enriching Word Vectors with Subword Information<br>
 -> Bojanowski, P. et al. (2017)<br>
 -> - Improves vector representation for rare and misspelled words.- Useful in multilingual scenarios.<br>
 -> Computationally heavier than traditional word embeddings.<br>
@@ -25,22 +25,22 @@ This project aims to solve that problem by improving how we detect emotions and 
 5.Feature Extraction:Text features were extracted using TF-IDF, and sentiment scores were calculated using the VADER tool.<br>
 6.Model Training:We used a Logistic Regression model to classify each comment as Positive, Negative, or Neutral based on both text and emoji signals.
 # Implementation Details
- ##Pandas:
+ ## Pandas:
  Used to load, clean, and manage the dataset (YouTube comments).<br>
- ##Scikit-learn:
+ ## Scikit-learn:
  Used for TF-IDF feature extraction and Logistic Regression model training.<br>
- ##TF-IDF:
+ ## TF-IDF:
  Converts cleaned text into numerical vectors so that the model can understand it.<br>
- ##VADER:
+ ## VADER:
  Calculates sentiment score of the text using a rule-based method.<br>
- ##Emoji Sentiment Dataset:
+ ## Emoji Sentiment Dataset:
  Provides predefined sentiment scores for emojis to include emotional context.<br>
- ##Logistic Regression:
+ ## Logistic Regression:
  A simple and fast machine learning model used to classify sentiments.<br>
- ##Matplotlib :
+ ## Matplotlib :
  Used to visualize results like sentiment distribution and performance metrics.<br>
 # Results and Discussions
-##The model achieved around 79% accuracy. It performed best on positive comments and slightly lower on neutral ones. Including emoji sentiment and slang handling helped improve prediction quality for informal text.
+## The model achieved around 79% accuracy. It performed best on positive comments and slightly lower on neutral ones. Including emoji sentiment and slang handling helped improve prediction quality for informal text.
 
 | Class     | Precision | Recall | F1-score | Support |
 |-----------|-----------|--------|----------|---------|
