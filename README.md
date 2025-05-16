@@ -48,7 +48,7 @@ A simple and fast machine learning model used to classify sentiments.
 Used to visualize results like sentiment distribution and performance metrics.
 
 # Results and Discussions
-## The model achieved around 79% accuracy. It performed best on positive comments and slightly lower on neutral ones. Including emoji sentiment and slang handling helped improve prediction quality for informal text.
+The model achieved around 79% accuracy. It performed best on positive comments and slightly lower on neutral ones. Including emoji sentiment and slang handling helped improve prediction quality for informal text.
 
 | Class     | Precision | Recall | F1-score | Support |
 |-----------|-----------|--------|----------|---------|
