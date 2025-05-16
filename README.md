@@ -25,20 +25,28 @@ This project aims to solve that problem by improving how we detect emotions and 
 5.Feature Extraction:Text features were extracted using TF-IDF, and sentiment scores were calculated using the VADER tool.<br>
 6.Model Training:We used a Logistic Regression model to classify each comment as Positive, Negative, or Neutral based on both text and emoji signals.
 # Implementation Details
- ## Pandas:
- Used to load, clean, and manage the dataset (YouTube comments).<br>
- ## Scikit-learn:
- Used for TF-IDF feature extraction and Logistic Regression model training.<br>
- ## TF-IDF:
- Converts cleaned text into numerical vectors so that the model can understand it.<br>
- ## VADER:
- Calculates sentiment score of the text using a rule-based method.<br>
- ## Emoji Sentiment Dataset:
- Provides predefined sentiment scores for emojis to include emotional context.<br>
- ## Logistic Regression:
- A simple and fast machine learning model used to classify sentiments.<br>
- ## Matplotlib :
- Used to visualize results like sentiment distribution and performance metrics.<br>
+
+## Pandas
+Used to load, clean, and manage the dataset (YouTube comments).
+
+## Scikit-learn
+Used for TF-IDF feature extraction and Logistic Regression model training.
+
+## TF-IDF
+Converts cleaned text into numerical vectors so that the model can understand it.
+
+## VADER
+Calculates sentiment score of the text using a rule-based method.
+
+## Emoji Sentiment Dataset
+Provides predefined sentiment scores for emojis to include emotional context.
+
+## Logistic Regression
+A simple and fast machine learning model used to classify sentiments.
+
+## Matplotlib
+Used to visualize results like sentiment distribution and performance metrics.
+
 # Results and Discussions
 ## The model achieved around 79% accuracy. It performed best on positive comments and slightly lower on neutral ones. Including emoji sentiment and slang handling helped improve prediction quality for informal text.
 
